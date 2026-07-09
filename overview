@@ -1,0 +1,184 @@
+Introduction
+The Banking Fraud Detection & Customer Analytics project is a comprehensive SQL-based data analytics solution developed to simulate real-world banking operations and demonstrate practical database management and analytical skills. The project focuses on detecting fraudulent transactions, analyzing customer behavior, and generating valuable business insights using structured banking data.
+Banks process thousands of financial transactions every day through online banking, ATMs, mobile banking, and branch operations. Monitoring these transactions manually is both time-consuming and inefficient. This project demonstrates how SQL can be used to organize banking data, identify suspicious activities, analyze customer information, and support decision-making through analytical reporting.
+The project consists of two relational tables: Customers and Transactions. The Customers table stores customer profile information, while the Transactions table records financial activities such as deposits, withdrawals, and transfers. These tables are connected using Primary Key and Foreign Key relationships, enabling efficient data retrieval and analysis through SQL joins.
+The database includes more than 50 sample records for customers and transactions to simulate a realistic banking environment. Various SQL queries are implemented to extract meaningful information, identify fraudulent transactions, classify customers, and produce business reports.
+Problem Statement
+Banks and financial institutions process millions of transactions daily. Identifying fraudulent transactions among such a large volume of data is a major challenge. Fraudulent activities such as unusually high withdrawals, suspicious fund transfers, repeated transactions, or abnormal customer behavior can result in significant financial losses and security risks.
+Traditional manual monitoring is not sufficient to detect fraud efficiently. Therefore, banks rely on data analysis techniques and SQL-based reporting systems to monitor customer activities, identify suspicious transactions, and generate fraud alerts.
+This project addresses these challenges by using SQL queries to detect fraud patterns, analyze customer behavior, and produce meaningful business reports.
+Project Objectives
+The main objectives of this project are:
+Design a relational banking database using MySQL.
+Store customer and transaction information efficiently.
+Detect fraudulent transactions using SQL queries.
+Analyze customer account balances and transaction history.
+Categorize customers based on account balance.
+Generate city-wise and account-type-wise customer reports.
+Demonstrate both basic and advanced SQL concepts.
+Build practical SQL skills for real-world banking analytics.
+Dataset Description
+Customers Table
+The Customers table contains customer profile information.
+Columns:
+Customer ID
+Customer Name
+City
+Account Type
+Account Balance
+Joining Date
+This table helps analyze customer demographics, account types, and balance distribution.
+Transactions Table
+The Transactions table stores banking transaction information.
+Columns:
+Transaction ID
+Customer ID
+Transaction Type (Deposit, Withdrawal, Transfer)
+Transaction Amount
+Transaction Date
+Transaction Status (Success/Fraud)
+This table is used to monitor financial transactions and identify suspicious activities.
+Database Relationship
+The project follows a One-to-Many Relationship.
+One customer can perform multiple transactions.
+The customer_id in the Customers table acts as the Primary Key.
+The customer_id in the Transactions table acts as the Foreign Key.
+This relationship allows both tables to be connected using SQL JOIN operations.
+SQL Concepts Implemented
+The project demonstrates a wide range of SQL concepts including:
+Database Design
+CREATE DATABASE
+CREATE TABLE
+Primary Key
+Foreign Key
+Data Manipulation Language (DML)
+INSERT
+SELECT
+UPDATE
+DELETE
+Data Filtering
+WHERE
+DISTINCT
+LIKE
+BETWEEN
+IN
+LIMIT
+Data Sorting
+ORDER BY
+Aggregate Functions
+COUNT()
+SUM()
+AVG()
+MIN()
+MAX()
+Grouping Operations
+GROUP BY
+HAVING
+Conditional Statements
+CASE
+SQL Joins
+INNER JOIN
+LEFT JOIN
+RIGHT JOIN
+Subqueries
+Single Row Subquery
+Multiple Row Subquery
+Advanced SQL
+EXISTS
+ANY
+ALL
+Common Table Expressions (CTEs)
+Views
+Window Functions:
+ROW_NUMBER()
+RANK()
+DENSE_RANK()
+NTILE()
+LEAD()
+LAG()
+Database Objects
+Stored Procedures
+Triggers
+Indexes
+Business Problems Solved
+This project answers several real-world banking questions, including:
+Which transactions are marked as fraudulent?
+Which customers have the highest account balances?
+What is the total fraud transaction amount?
+Which city has the highest number of customers?
+Which customers are classified as VIP or Premium?
+What is the average account balance by city?
+Which are the top five highest-value transactions?
+Which customers have balances above the average?
+How many successful and fraudulent transactions exist?
+How can suspicious transaction patterns be identified?
+Fraud Detection Logic
+The project demonstrates rule-based fraud detection using SQL.
+Fraud detection is performed by identifying:
+Transactions with Fraud status.
+High-value transactions exceeding predefined limits.
+Customers involved in suspicious withdrawal patterns.
+Customers with unusually high transaction amounts.
+High-risk transactions ranked using SQL window functions.
+Customer behavior through transaction analysis.
+Although this project uses sample data, the SQL logic closely resembles reporting techniques used in banking and financial institutions for fraud monitoring.
+Key Features
+Designed a relational banking database.
+Managed customer and transaction records.
+Implemented advanced SQL queries for analytics.
+Generated fraud detection reports.
+Performed customer segmentation using CASE statements.
+Built reusable Views and Stored Procedures.
+Automated fraud logging using Triggers.
+Improved query performance with Indexes.
+Applied Window Functions for ranking and trend analysis.
+Expected Outputs
+The project generates several analytical reports, including:
+Fraud Transaction Report
+Customer Account Summary
+High-Value Transaction Report
+Customer Category Report
+City-wise Customer Distribution
+Average Balance Analysis
+Customer Ranking Report
+Top 5 Transaction Report
+Fraud Amount Summary
+Transaction Status Report
+Tools & Technologies
+Database: MySQL
+Language: SQL
+IDE: MySQL Workbench
+Version Control: Git & GitHub
+Skills Demonstrated
+SQL Programming
+Database Design
+Data Analysis
+Fraud Detection
+Customer Analytics
+Relational Database Management
+Business Reporting
+Query Optimization
+Data Filtering and Aggregation
+Advanced SQL Functions
+Problem Solving
+Analytical Thinking
+Learning Outcomes
+Through this project, I gained practical experience in:
+Designing relational databases.
+Writing basic and advanced SQL queries.
+Working with real-world banking datasets.
+Detecting fraudulent transactions using SQL.
+Analyzing customer behavior and transaction trends.
+Implementing Joins, Subqueries, CTEs, and Window Functions.
+Creating Views, Stored Procedures, Triggers, and Indexes.
+Generating business insights for decision-making.
+Future Enhancements
+This project can be extended by:
+Integrating with Power BI for interactive dashboards.
+Connecting with Python for predictive fraud detection.
+Applying Machine Learning algorithms for anomaly detection.
+Expanding the dataset with credit card, ATM, and UPI transactions.
+Developing real-time fraud alert systems.
+Creating web-based reporting dashboards.
+Conclusion
+The Banking Fraud Detection & Customer Analytics using MySQL project demonstrates how SQL can be applied to solve real-world banking problems by analyzing customer and transaction data. It showcases database design, advanced SQL querying, fraud detection techniques, and business analytics to generate actionable insights. This project strengthens practical knowledge of SQL while highlighting its role in banking analytics, fraud monitoring, and data-driven decision-making, making it a valuable portfolio project for Data Analyst and Business Analyst roles.
